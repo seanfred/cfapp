@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_question_set.user_id %>
+</p>
+
+<p>
+  <strong>Question set:</strong>
+  <%= @user_question_set.question_set_id %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @user_question_set.created_at %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @user_question_set.updated_at %>
+</p>
+
+<%= link_to 'Edit', edit_user_question_set_path(@user_question_set) %> |
+<%= link_to 'Back', user_question_sets_path %>

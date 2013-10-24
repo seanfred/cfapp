@@ -1,0 +1,33 @@
+<h1>Listing user_question_sets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Question set</th>
+      <th>Created at</th>
+      <th>Updated at</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_question_sets.each do |user_question_set| %>
+      <tr>
+        <td><%= user_question_set.user_id %></td>
+        <td><%= user_question_set.question_set_id %></td>
+        <td><%= user_question_set.created_at %></td>
+        <td><%= user_question_set.updated_at %></td>
+        <td><%= link_to 'Show', user_question_set %></td>
+        <td><%= link_to 'Edit', edit_user_question_set_path(user_question_set) %></td>
+        <td><%= link_to 'Destroy', user_question_set, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User question set', new_user_question_set_path %>
