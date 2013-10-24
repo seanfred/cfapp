@@ -1,0 +1,49 @@
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/administrator/rails/cfapp/app/models/user.rb:5)
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/administrator/rails/cfapp/app/models/user.rb:5)
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/administrator/rails/cfapp/app/models/user.rb:5)
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/administrator/rails/cfapp/app/models/user.rb:5)
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/administrator/rails/cfapp/app/models/user.rb:5)
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/administrator/rails/cfapp/app/models/user.rb:5)
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/administrator/rails/cfapp/app/models/user.rb:5)
+  [1m[36m (3.7ms)[0m  [1mCREATE TABLE "answers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "question_id" integer, "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (5.1ms)[0m  CREATE INDEX "index_answers_on_question_id" ON "answers" ("question_id")
+  [1m[36m (4.5ms)[0m  [1mCREATE INDEX "index_answers_on_user_id" ON "answers" ("user_id")[0m
+  [1m[35m (4.1ms)[0m  CREATE TABLE "offerings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "offering_type_id" integer, "city_id" integer, "description" text, "location_id" integer, "starts_at" datetime, "ends_at" datetime, "max_enrollment" integer, "created_at" datetime, "updated_at" datetime, "deadline_at" datetime, "tuition_cost" integer, "deposit_cost" integer, "code" varchar(255)) 
+  [1m[36m (4.1ms)[0m  [1mCREATE INDEX "index_offerings_on_city_id" ON "offerings" ("city_id")[0m
+  [1m[35m (3.9ms)[0m  CREATE INDEX "index_offerings_on_code" ON "offerings" ("code")
+  [1m[36m (4.0ms)[0m  [1mCREATE INDEX "index_offerings_on_deadline_at" ON "offerings" ("deadline_at")[0m
+  [1m[35m (11.0ms)[0m  CREATE INDEX "index_offerings_on_location_id" ON "offerings" ("location_id")
+  [1m[36m (10.3ms)[0m  [1mCREATE INDEX "index_offerings_on_offering_type_id" ON "offerings" ("offering_type_id")[0m
+  [1m[35m (4.4ms)[0m  CREATE TABLE "question_set_questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "question_id" integer, "question_set_id" integer, "position" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (7.1ms)[0m  [1mCREATE INDEX "qqq_on_qid_and_qsid" ON "question_set_questions" ("question_id", "question_set_id")[0m
+  [1m[35m (11.7ms)[0m  CREATE TABLE "question_sets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (7.9ms)[0m  [1mCREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "body" text, "question_type_id" integer, "created_at" datetime, "updated_at" datetime, "description" text) [0m
+  [1m[35m (7.6ms)[0m  CREATE INDEX "index_questions_on_question_type_id" ON "questions" ("question_type_id")
+  [1m[36m (5.8ms)[0m  [1mCREATE TABLE "user_enrollments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "offering_id" integer, "status" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (4.8ms)[0m  CREATE INDEX "index_user_enrollments_on_offering_id" ON "user_enrollments" ("offering_id")
+  [1m[36m (3.9ms)[0m  [1mCREATE INDEX "index_user_enrollments_on_user_id_and_offering_id" ON "user_enrollments" ("user_id", "offering_id")[0m
+  [1m[35m (10.7ms)[0m  CREATE INDEX "index_user_enrollments_on_user_id" ON "user_enrollments" ("user_id")
+  [1m[36m (7.0ms)[0m  [1mCREATE TABLE "user_question_sets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "question_set_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (4.2ms)[0m  CREATE INDEX "index_user_question_sets_on_question_set_id" ON "user_question_sets" ("question_set_id")
+  [1m[36m (3.9ms)[0m  [1mCREATE INDEX "index_user_question_sets_on_user_id_and_question_set_id" ON "user_question_sets" ("user_id", "question_set_id")[0m
+  [1m[35m (11.3ms)[0m  CREATE INDEX "index_user_question_sets_on_user_id" ON "user_question_sets" ("user_id")
+  [1m[36m (5.9ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "avatar_uid" varchar(255), "avatar_name" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime, "authentication_token" varchar(255), "confirmation_token" varchar(255), "confirmed_at" datetime, "confirmation_sent_at" datetime, "unconfirmed_email" varchar(255), "email_validation_token" varchar(255), "country_code" varchar(2), "zip" varchar(255), "signup_finalized_at" datetime, "born_at" date, "city" varchar(255), "state" varchar(255), "address1" varchar(255), "cell_phone" varchar(255), "usa_epay_customer_id" integer) [0m
+  [1m[35m (4.7ms)[0m  CREATE UNIQUE INDEX "index_users_on_authentication_token" ON "users" ("authentication_token")
+  [1m[36m (4.9ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [1m[35m (5.1ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (5.7ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (5.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (5.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (6.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131009224438')[0m
+  [1m[35m (7.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131008002104')
+  [1m[36m (6.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131008002504')[0m
+  [1m[35m (5.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131008023630')
+  [1m[36m (4.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131008030607')[0m
+  [1m[35m (5.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131008182718')
+  [1m[36m (7.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131009031549')[0m
+  [1m[35m (5.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20131009214729')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/administrator/rails/cfapp/app/models/user.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"

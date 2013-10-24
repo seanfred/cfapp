@@ -10,20 +10,16 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 
 development:
-  adapter: postgresql
-  encoding: unicode
-  database: codefellows-test_development
+  adapter: sqlite3
+  database: db/development.sqlite3
   pool: 5
-  username: mxstrand
-  password:
+  timeout: 5000
 
 test:
-  adapter: postgresql
-  encoding: unicode
-  database: codefellows-test_test
+  adapter: sqlite3
+  database: db/development.sqlite3
   pool: 5
-  username: mxstrand
-  password:
+  timeout: 5000
 
 production:
   adapter: postgresql
