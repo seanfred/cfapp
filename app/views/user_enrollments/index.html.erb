@@ -1,0 +1,35 @@
+<h1>Listing user_enrollments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Offering</th>
+      <th>Status</th>
+      <th>Created at</th>
+      <th>Updated at</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_enrollments.each do |user_enrollment| %>
+      <tr>
+        <td><%= user_enrollment.user_id %></td>
+        <td><%= user_enrollment.offering_id %></td>
+        <td><%= user_enrollment.status %></td>
+        <td><%= user_enrollment.created_at %></td>
+        <td><%= user_enrollment.updated_at %></td>
+        <td><%= link_to 'Show', user_enrollment %></td>
+        <td><%= link_to 'Edit', edit_user_enrollment_path(user_enrollment) %></td>
+        <td><%= link_to 'Destroy', user_enrollment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User enrollment', new_user_enrollment_path %>

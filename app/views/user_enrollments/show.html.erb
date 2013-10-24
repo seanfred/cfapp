@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_enrollment.user_id %>
+</p>
+
+<p>
+  <strong>Offering:</strong>
+  <%= @user_enrollment.offering_id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @user_enrollment.status %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @user_enrollment.created_at %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @user_enrollment.updated_at %>
+</p>
+
+<%= link_to 'Edit', edit_user_enrollment_path(@user_enrollment) %> |
+<%= link_to 'Back', user_enrollments_path %>
