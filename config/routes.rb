@@ -1,4 +1,6 @@
 CodefellowsTest::Application.routes.draw do
+  resources :question_sets
+
   resources :answers
 
   resources :questions
