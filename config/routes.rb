@@ -5,9 +5,11 @@ CodefellowsTest::Application.routes.draw do
 
   resources :question_sets
 
-  resources :answers
 
-  resources :questions
+
+  resources :questions do
+    resources :answers
+  end
 
   resources :admission_requests
 
@@ -61,7 +63,7 @@ CodefellowsTest::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
