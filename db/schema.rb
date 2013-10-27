@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131024015031) do
+ActiveRecord::Schema.define(version: 20131027004814) do
 
   create_table "answers", force: true do |t|
     t.integer  "user_id"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20131024015031) do
     t.integer  "tuition_cost"
     t.integer  "deposit_cost"
     t.string   "code"
+    t.integer  "user_enrollment_id"
   end
 
   add_index "offerings", ["city_id"], name: "index_offerings_on_city_id"
@@ -46,6 +47,7 @@ ActiveRecord::Schema.define(version: 20131024015031) do
   add_index "offerings", ["deadline_at"], name: "index_offerings_on_deadline_at"
   add_index "offerings", ["location_id"], name: "index_offerings_on_location_id"
   add_index "offerings", ["offering_type_id"], name: "index_offerings_on_offering_type_id"
+  add_index "offerings", ["user_enrollment_id"], name: "index_offerings_on_user_enrollment_id"
 
   create_table "question_set_questions", force: true do |t|
     t.integer  "question_id"

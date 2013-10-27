@@ -125,3 +125,13 @@ Processing by AnswersController#show as JSON
   [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1  [["id", "1"]]
   Rendered answers/show.json.jbuilder (29.8ms)
 Completed 200 OK in 107ms (Views: 52.4ms | ActiveRecord: 0.9ms)
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/administrator/rails/cfapp/app/models/user.rb:8)
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/administrator/rails/cfapp/app/models/user.rb:8)
+  [1m[36mActiveRecord::SchemaMigration Load (13.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddColumnToOfferings (20131027004814)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "offerings" ADD "user_enrollment_id" integer[0m
+  [1m[35m (1.0ms)[0m  CREATE INDEX "index_offerings_on_user_enrollment_id" ON "offerings" ("user_enrollment_id")
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20131027004814"]]
+  [1m[35m (5.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
