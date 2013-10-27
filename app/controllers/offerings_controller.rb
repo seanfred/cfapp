@@ -69,6 +69,8 @@ class OfferingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def offering_params
-      params.require(:offering).permit(:name, :detail,:start_date,:end_date)
+      params.require(:offering).permit(:name, :offering_type_id, :city_id, :description, :location_id,
+                                       :starts_at, :ends_at, :max_enrollment, :created_at, :updated_at,
+                                       :deadline_at, :tuition_cost, :deposit_cost, :code, :user_enrollment_id)
     end
 end

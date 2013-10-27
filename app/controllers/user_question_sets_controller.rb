@@ -69,6 +69,6 @@ class UserQuestionSetsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_question_set_params
-      params.require(:user_question_set).permit(:user_id, :question_set_id, :created_at, :updated_at)
+      params.require(:user_question_set).permit(:user_id, :question_set_id, :created_at, :updated_at, :user_enrollment_id)
     end
 end
