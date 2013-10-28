@@ -15,15 +15,6 @@
   <%= @answer.body %>
 </p>
 
-<p>
-  <strong>Created at:</strong>
-  <%= @answer.created_at %>
-</p>
 
-<p>
-  <strong>Updated at:</strong>
-  <%= @answer.updated_at %>
-</p>
-
-<%= link_to 'Edit', edit_answer_path(@answer) %> |
-<%= link_to 'Back', answers_path %>
+<%= link_to 'Edit', edit_question_answer_path(@question, @answer) %> |
+<%= link_to 'Back', question_answers_path(@question) %>

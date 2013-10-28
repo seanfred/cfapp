@@ -10,21 +10,34 @@ class QuestionsController < ApplicationController
   # GET /questions/1
   # GET /questions/1.json
   def show
+    @question = Question.find(params[:id])
+    @answers = @question.answers
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @question}
+    end
   end
 
   # GET /questions/new
   def new
     @question = Question.new
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @question}
+    end
   end
 
   # GET /questions/1/edit
   def edit
+    @question = Question.find(params[:id])
   end
 
   # POST /questions
   # POST /questions.json
   def create
-    @question = Question.new(question_params)
+    @question = Question.new(params[:question])
 
     respond_to do |format|
       if @question.save

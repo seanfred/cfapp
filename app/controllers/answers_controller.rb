@@ -11,15 +11,17 @@ class AnswersController < ApplicationController
   # GET /answers/1
   # GET /answers/1.json
   def show
+    @answer = @question.answers.find(params[:id])
   end
 
   # GET /answers/new
   def new
-    @answer = @question.answer.new
+    @answer = @question.answers.new
   end
 
   # GET /answers/1/edit
   def edit
+    @answer = @question.answers.find(params[:id])
   end
 
   # POST /answers
