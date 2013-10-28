@@ -21,7 +21,7 @@ class UserEnrollmentsController < ApplicationController
     if current_user.user_enrollment
       redirect_to root_path
     else
-    @user_enrollment = UserEnrollment.new
+      @user_enrollment = UserEnrollment.new
     end
   end
 
@@ -73,9 +73,9 @@ class UserEnrollmentsController < ApplicationController
     user_id = params[:format]
     User.find(user_id).destroy
     redirect_to user_sessions_path
+  end
 
-
-  private
+    private
 
 
     def check_logged_in_user
@@ -90,11 +90,12 @@ class UserEnrollmentsController < ApplicationController
         @user_enrollment = current_user.user_enrollment
       else
         @user_enrollment = UserEnrollment.find(params[:id])
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_enrollment_params
       params.require(:user_enrollment).permit(:user_id, :offering_id, :status, :created_at,
-                     :updated_at)
+       :updated_at)
     end
-end
+  end
