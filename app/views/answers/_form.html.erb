@@ -25,13 +25,6 @@
   </div>
   <div class="field">
     <%= f.label :created_at %><br>
-    <%= f.text_field :created_at %>
-  </div>
-  <div class="field">
-    <%= f.label :updated_at %><br>
-    <%= f.text_field :updated_at %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+    <%= f.date_select :created_at %>
   </div>
 <% end %>
