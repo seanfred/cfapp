@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-CodefellowsTest::Application.config.secret_key_base = '0b6b766535a68087b1acdf47440a3437929d396458bf36932cc008c309d2565b346d076b338d1ed8bccd02623a83c9b0170d64560e139e1688a909b6f86bed93'
+CodefellowsTest::Application.config.secret_key_base = ENV['RAILS_SECRET']
