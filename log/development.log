@@ -11098,3 +11098,129 @@ Processing by AnswersController#new as HTML
   Rendered answers/_form.html.erb (4.5ms)
   Rendered answers/new.html.erb within layouts/application (5.4ms)
 Completed 200 OK in 55ms (Views: 52.8ms | ActiveRecord: 0.1ms)
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/sean/code-fellows/app/models/user.rb:8)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-28 16:02:08 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OfferingsController#index as HTML
+  [1m[35mOffering Load (0.4ms)[0m  SELECT "offerings".* FROM "offerings"
+  Rendered offerings/index.html.erb within layouts/application (85.2ms)
+Completed 200 OK in 363ms (Views: 257.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-10-28 16:02:09 -0700
+
+
+Started GET "/assets/user_question_sets.css?body=1" for 127.0.0.1 at 2013-10-28 16:02:09 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-28 16:02:09 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-28 16:02:09 -0700
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-10-28 16:02:09 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-28 16:02:09 -0700
+
+
+Started GET "/assets/user_enrollments.css?body=1" for 127.0.0.1 at 2013-10-28 16:02:09 -0700
+
+
+Started GET "/assets/offerings.css?body=1" for 127.0.0.1 at 2013-10-28 16:02:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-28 16:02:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-28 16:02:09 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-28 16:02:09 -0700
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-10-28 16:02:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-28 16:02:09 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-10-28 16:02:09 -0700
+
+
+Started GET "/assets/user_enrollments.js?body=1" for 127.0.0.1 at 2013-10-28 16:02:10 -0700
+
+
+Started GET "/assets/user_question_sets.js?body=1" for 127.0.0.1 at 2013-10-28 16:02:10 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-28 16:02:10 -0700
+
+
+Started GET "/assets/offerings.js?body=1" for 127.0.0.1 at 2013-10-28 16:02:10 -0700
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/sean/code-fellows/app/models/user.rb:8)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-28 16:07:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OfferingsController#index as HTML
+  [1m[35mOffering Load (0.2ms)[0m  SELECT "offerings".* FROM "offerings"
+  Rendered offerings/index.html.erb within layouts/application (96.2ms)
+Completed 200 OK in 314ms (Views: 273.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
+
+
+Started GET "/assets/user_enrollments.css?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
+
+
+Started GET "/assets/offerings.css?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
+
+
+Started GET "/assets/user_question_sets.css?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
+
+
+Started GET "/assets/offerings.js?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
+
+
+Started GET "/assets/user_enrollments.js?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
+
+
+Started GET "/assets/user_question_sets.js?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-10-28 16:07:40 -0700
