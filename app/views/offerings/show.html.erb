@@ -7,18 +7,18 @@
 
 <p>
   <strong>Detail:</strong>
-  <%= @offering.detail %>
+  <%= @offering.description %>
 </p>
 
 <p>
   <strong>Start Date:</strong>
-  <%= @offering.start_date %>
+  <%= @offering.starts_at %>
 </p>
 
 
 <p>
   <strong>End Date:</strong>
-  <%= @offering.end_date %>
+  <%= @offering.ends_at %>
 </p>
 
 <%= link_to 'Edit', edit_offering_path(@offering) %> |

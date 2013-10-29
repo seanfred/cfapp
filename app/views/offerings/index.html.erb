@@ -16,8 +16,9 @@
         <td><%= offering.name %></td>
         <td><%= offering.starts_at %></td>
         <td><%= offering.ends_at %></td>
-
         <td><%= link_to 'Show', offering %></td>
+        <td><%= link_to 'Edit', edit_offering_path(offering) %></td>
+        <td><%= link_to 'Destroy', offering, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -25,7 +26,7 @@
 
 <br>
 
-<%#= link_to 'New Offering', new_offering_path %>
+<%= link_to 'New Offering', new_offering_path %>
 
 
 <% if current_user %>

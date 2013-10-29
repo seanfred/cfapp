@@ -4,8 +4,8 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th></th>
-      <th></th>
+      <th>Question</th>
+      <th>Priority</th>
       <th></th>
     </tr>
   </thead>
@@ -14,6 +14,8 @@
     <% @questions.each do |question| %>
       <tr>
         <td><%= question.name %></td>
+        <td><%= question.question_type_id %></td>
+        <td><%= question.priority_id %></td>
         <td><%= link_to 'Show', question %></td>
         <td><%= link_to 'Edit', edit_question_path(question) %></td>
         <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>

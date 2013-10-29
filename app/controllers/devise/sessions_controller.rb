@@ -13,7 +13,7 @@ class Devise::SessionsController < DeviseController
   # POST /resource/sign_in
   def create
     respond_to do |format|
-        format.html { 
+        format.html {
           self.resource = warden.authenticate!(auth_options)
           set_flash_message(:notice, :signed_in) if is_navigational_format?
           sign_in(resource_name, resource)
@@ -22,7 +22,7 @@ class Devise::SessionsController < DeviseController
         format.json {
           resource = User.find_for_database_authentication(:email=>params[:user][:email])
           return invalid_login_attempt unless resource
-       
+
           if resource.valid_password?(params[:user][:password])
             sign_in("user", resource)
             resource.ensure_authentication_token!  #make sure the user has a token generated
@@ -32,7 +32,7 @@ class Devise::SessionsController < DeviseController
           invalid_login_attempt
         }
     end
-    
+
   end
 
   # DELETE /resource/sign_out
@@ -68,7 +68,7 @@ class Devise::SessionsController < DeviseController
 
   def invalid_login_attempt
     warden.custom_failure!
-    render json: "Error with your login or password", status: :unprocessable_entity 
+    render json: "Error with your login or password", status: :unprocessable_entity
 
   end
 end
