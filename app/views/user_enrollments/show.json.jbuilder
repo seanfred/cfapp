@@ -1,4 +1,4 @@
-json.extract! @user_enrollment, :user_id, :offering_id, :status, :created_at, :updated_at, :created_at, :updated_at
+json.extract! @user_enrollment, :user_id, :offering_id, :status, :created_at, :updated_at, :created_at, :updated_at, :unsaved_changes
 
 json.offerings @user_enrollments.offerings, :name, :offering_type_id, :city_id, :description, :location_id,
                                        :starts_at, :ends_at, :max_enrollment, :created_at, :updated_at,

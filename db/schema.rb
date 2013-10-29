@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131028222320) do
+ActiveRecord::Schema.define(version: 20131029225216) do
 
   create_table "answers", force: true do |t|
     t.integer  "user_id"
@@ -85,6 +85,7 @@ ActiveRecord::Schema.define(version: 20131028222320) do
     t.integer  "status"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "unsaved_changes"
   end
 
   add_index "user_enrollments", ["offering_id"], name: "index_user_enrollments_on_offering_id"

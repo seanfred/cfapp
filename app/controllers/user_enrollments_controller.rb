@@ -96,6 +96,6 @@ class UserEnrollmentsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_enrollment_params
       params.require(:user_enrollment).permit(:user_id, :offering_id, :status, :created_at,
-       :updated_at)
+       :updated_at, :unsaved_changes)
     end
   end
