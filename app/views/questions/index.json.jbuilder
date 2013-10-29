@@ -3,3 +3,5 @@ json.array!(@questions) do |question|
                                       :description, :user_question_set_id, :priority_id
   json.url question_url(question, format: :json)
 end
+
+json.answers @questions.answers, :user_id, :question_id, :body, :created_at, :updated_at

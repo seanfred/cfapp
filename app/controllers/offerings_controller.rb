@@ -10,6 +10,7 @@ class OfferingsController < ApplicationController
   # GET /offerings/1
   # GET /offerings/1.json
   def show
+
   end
 
   # GET /offerings/new
