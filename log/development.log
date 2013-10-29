@@ -12846,3 +12846,1003 @@ Processing by UserEnrollmentsController#new as HTML
   Rendered user_enrollments/_form.html.erb (23.8ms)
   Rendered user_enrollments/new.html.erb within layouts/application (29.3ms)
 Completed 200 OK in 98ms (Views: 92.3ms | ActiveRecord: 0.6ms)
+DEPRECATION WARNING: devise :token_authenticatable is deprecated. Please check Devise 3.1 release notes for more information on how to upgrade. (called from <class:User> at /Users/sean/code-fellows/app/models/user.rb:8)
+
+
+Started GET "/questions" for 127.0.0.1 at 2013-10-29 09:57:50 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.7ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (30.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 375ms (Views: 340.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/assets/user_question_sets.css?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/assets/user_enrollments.css?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/assets/offerings.css?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/assets/user_enrollments.js?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/assets/offerings.js?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/assets/user_question_sets.js?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-29 09:57:51 -0700
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2013-10-29 09:58:01 -0700
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.erb (35.4ms)
+  Rendered questions/new.html.erb within layouts/application (45.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 122ms (Views: 119.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.erb (7.9ms)
+  Rendered questions/new.html.erb within layouts/application (9.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/assets/offerings.css?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/assets/user_enrollments.css?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/assets/user_question_sets.css?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/assets/offerings.js?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/assets/user_question_sets.js?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/assets/user_enrollments.js?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-29 09:58:20 -0700
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.erb (81.4ms)
+  Rendered questions/new.html.erb within layouts/application (84.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 103ms (Views: 100.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/offerings.css?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/assets/user_question_sets.css?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/assets/user_enrollments.css?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/assets/offerings.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/assets/user_enrollments.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/assets/user_question_sets.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:21 -0700
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2013-10-29 09:59:37 -0700
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.erb (7.8ms)
+  Rendered questions/new.html.erb within layouts/application (8.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 73ms (Views: 71.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-29 09:59:37 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-10-29 09:59:37 -0700
+
+
+Started GET "/assets/user_enrollments.css?body=1" for 127.0.0.1 at 2013-10-29 09:59:37 -0700
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-10-29 09:59:37 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-29 09:59:37 -0700
+
+
+Started GET "/assets/offerings.css?body=1" for 127.0.0.1 at 2013-10-29 09:59:37 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-29 09:59:38 -0700
+
+
+Started GET "/assets/user_question_sets.css?body=1" for 127.0.0.1 at 2013-10-29 09:59:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:38 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:38 -0700
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:38 -0700
+
+
+Started GET "/assets/offerings.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:38 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:38 -0700
+
+
+Started GET "/assets/user_question_sets.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:38 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:38 -0700
+
+
+Started GET "/assets/user_enrollments.js?body=1" for 127.0.0.1 at 2013-10-29 09:59:38 -0700
+
+
+Started GET "/questions/edit" for 127.0.0.1 at 2013-10-29 10:00:53 -0700
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", "edit"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound - Couldn't find Question with id=edit:
+  activerecord (4.0.0) lib/active_record/relation/finder_methods.rb:198:in `raise_record_not_found_exception!'
+  activerecord (4.0.0) lib/active_record/relation/finder_methods.rb:284:in `find_one'
+  activerecord (4.0.0) lib/active_record/relation/finder_methods.rb:268:in `find_with_ids'
+  activerecord (4.0.0) lib/active_record/relation/finder_methods.rb:35:in `find'
+  activerecord-deprecated_finders (1.0.3) lib/active_record/deprecated_finders/relation.rb:122:in `find'
+  activerecord (4.0.0) lib/active_record/querying.rb:3:in `find'
+  app/controllers/questions_controller.rb:80:in `set_question'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:427:in `_run__3692129313590482493__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__190035678372289249__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/sean/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/sean/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/sean/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70158283031620/variables" for 127.0.0.1 at 2013-10-29 10:00:53 -0700
+
+
+Started GET "/questions/" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (2.8ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 90ms (Views: 88.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/assets/user_enrollments.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/assets/offerings.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/assets/user_question_sets.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/assets/user_enrollments.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/assets/user_question_sets.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/assets/offerings.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:00 -0700
+
+
+Started GET "/questions/1/edit" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+Processing by QuestionsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered questions/_form.html.erb (6.1ms)
+  Rendered questions/edit.html.erb within layouts/application (7.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/assets/user_enrollments.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/assets/user_question_sets.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/assets/offerings.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/assets/offerings.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/assets/user_enrollments.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/assets/user_question_sets.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:06 -0700
+
+
+Started GET "/offerings/" for 127.0.0.1 at 2013-10-29 10:01:25 -0700
+Processing by OfferingsController#index as HTML
+  [1m[35mOffering Load (0.4ms)[0m  SELECT "offerings".* FROM "offerings"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUserEnrollment Load (3.7ms)[0m  SELECT "user_enrollments".* FROM "user_enrollments" WHERE "user_enrollments"."user_id" = ? ORDER BY "user_enrollments"."id" ASC LIMIT 1  [["user_id", 2]]
+  Rendered offerings/index.html.erb within layouts/application (120.1ms)
+Completed 200 OK in 137ms (Views: 126.8ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/offerings.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/assets/user_question_sets.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/assets/user_enrollments.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/assets/user_question_sets.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/assets/user_enrollments.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/assets/offerings.js?body=1" for 127.0.0.1 at 2013-10-29 10:01:26 -0700
+
+
+Started GET "/user_enrollments/new" for 127.0.0.1 at 2013-10-29 10:01:30 -0700
+Processing by UserEnrollmentsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUserEnrollment Load (0.1ms)[0m  SELECT "user_enrollments".* FROM "user_enrollments" WHERE "user_enrollments"."user_id" = ? ORDER BY "user_enrollments"."id" ASC LIMIT 1  [["user_id", 2]]
+  Rendered user_enrollments/_form.html.erb (69.5ms)
+  Rendered user_enrollments/new.html.erb within layouts/application (71.9ms)
+Completed 200 OK in 88ms (Views: 83.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/answers" for 127.0.0.1 at 2013-10-29 10:03:13 -0700
+
+ActionController::RoutingError (No route matches [GET] "/answers"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/sean/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/sean/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/sean/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/sean/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/sean/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.6ms)
+  Rendered /Users/sean/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.2ms)
+  Rendered /Users/sean/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (46.9ms)
+
+
+Started GET "/questions/1/answers" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+Processing by AnswersController#index as HTML
+  Parameters: {"question_id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mAnswer Load (0.9ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  [["question_id", 1]]
+  Rendered answers/index.html.erb within layouts/application (70.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 97ms (Views: 82.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/assets/user_enrollments.css?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/assets/offerings.css?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/assets/user_question_sets.css?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/assets/offerings.js?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/assets/user_enrollments.js?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/assets/user_question_sets.js?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-29 10:03:23 -0700
+
+
+Started GET "/questions//answers" for 127.0.0.1 at 2013-10-29 10:04:07 -0700
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"answers"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", "answers"]]
+Completed 404 Not Found in 76ms
+
+ActiveRecord::RecordNotFound - Couldn't find Question with id=answers:
+  activerecord (4.0.0) lib/active_record/relation/finder_methods.rb:198:in `raise_record_not_found_exception!'
+  activerecord (4.0.0) lib/active_record/relation/finder_methods.rb:284:in `find_one'
+  activerecord (4.0.0) lib/active_record/relation/finder_methods.rb:268:in `find_with_ids'
+  activerecord (4.0.0) lib/active_record/relation/finder_methods.rb:35:in `find'
+  activerecord-deprecated_finders (1.0.3) lib/active_record/deprecated_finders/relation.rb:122:in `find'
+  activerecord (4.0.0) lib/active_record/querying.rb:3:in `find'
+  app/controllers/questions_controller.rb:80:in `set_question'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:427:in `_run__3692129313590482493__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__190035678372289249__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/sean/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/sean/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/sean/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70158273621680/variables" for 127.0.0.1 at 2013-10-29 10:04:07 -0700
+
+
+Started GET "/questions/1/answers" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+Processing by AnswersController#index as HTML
+  Parameters: {"question_id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  [["question_id", 1]]
+  Rendered answers/index.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 88ms (Views: 84.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+
+
+Started GET "/assets/offerings.css?body=1" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+
+
+Started GET "/assets/user_enrollments.css?body=1" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+
+
+Started GET "/assets/user_question_sets.css?body=1" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+
+
+Started GET "/assets/user_enrollments.js?body=1" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+
+
+Started GET "/assets/offerings.js?body=1" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-29 10:04:24 -0700
+
+
+Started GET "/assets/user_question_sets.js?body=1" for 127.0.0.1 at 2013-10-29 10:04:25 -0700
+
+
+Started GET "/questions/1/answers.json" for 127.0.0.1 at 2013-10-29 10:04:53 -0700
+Processing by AnswersController#index as JSON
+  Parameters: {"question_id"=>"1"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?[0m  [["question_id", 1]]
+  Rendered answers/index.json.jbuilder (70.5ms)
+Completed 500 Internal Server Error in 80ms
+
+NoMethodError - undefined method `answer_url' for #<#<Class:0x007f9dff1bc4d0>:0x007f9dff1bc480>:
+  app/views/answers/index.json.jbuilder:3:in `block in _app_views_answers_index_json_jbuilder___1054631687760498677_70158283331060'
+  jbuilder (1.5.2) lib/jbuilder.rb:315:in `block (2 levels) in _map_collection'
+  jbuilder (1.5.2) lib/jbuilder.rb:322:in `_scope'
+  jbuilder (1.5.2) lib/jbuilder.rb:315:in `block in _map_collection'
+  activerecord (4.0.0) lib/active_record/relation/delegation.rb:13:in `map'
+  jbuilder (1.5.2) lib/jbuilder.rb:314:in `_map_collection'
+  jbuilder (1.5.2) lib/jbuilder.rb:228:in `array!'
+  jbuilder (1.5.2) lib/jbuilder/jbuilder_template.rb:39:in `array!'
+  app/views/answers/index.json.jbuilder:1:in `_app_views_answers_index_json_jbuilder___1054631687760498677_70158283331060'
+  actionpack (4.0.0) lib/action_view/template.rb:143:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/sean/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:443:in `_run__4405563997535076941__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__190035678372289249__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/sean/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/sean/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/sean/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70158271154400/variables" for 127.0.0.1 at 2013-10-29 10:04:53 -0700
+
+
+Started GET "/questions/1/answers/1.json" for 127.0.0.1 at 2013-10-29 10:05:05 -0700
+Processing by AnswersController#show as JSON
+  Parameters: {"question_id"=>"1", "id"=>"1"}
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ? AND "answers"."id" = ? LIMIT 1  [["question_id", 1], ["id", "1"]]
+  Rendered answers/show.json.jbuilder (12.3ms)
+Completed 200 OK in 20ms (Views: 15.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (2.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/assets/offerings.css?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/assets/user_enrollments.css?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/assets/user_question_sets.css?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/assets/user_question_sets.js?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/assets/user_enrollments.js?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/assets/offerings.js?body=1" for 127.0.0.1 at 2013-10-29 10:06:25 -0700
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2013-10-29 10:06:31 -0700
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.erb (7.3ms)
+  Rendered questions/new.html.erb within layouts/application (9.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2013-10-29 10:06:39 -0700
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 69ms (Views: 67.0ms | ActiveRecord: 0.8ms)
