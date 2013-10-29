@@ -6,8 +6,8 @@
       <th>User</th>
       <th>Question</th>
       <th>Body</th>
-      <th></th>
-      <th></th>
+      <th>Created</th>
+      <th>Updated</th>
       <th></th>
     </tr>
   </thead>
@@ -20,9 +20,9 @@
         <td><%= answer.body %></td>
         <td><%= answer.created_at %></td>
         <td><%= answer.updated_at %></td>
-        <td><%= link_to 'Show', [@question, answer] %></td>
-        <td><%= link_to 'Edit', edit_question_answer_path(@question, answer) %></td>
-        <td><%= link_to 'Destroy', [@question, answer], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', [@question, @answer] %></td>
+        <td><%= link_to 'Edit', edit_question_answer_path(@question, @answer) %></td>
+        <td><%= link_to 'Destroy', [@question, @answer], method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

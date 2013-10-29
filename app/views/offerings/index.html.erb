@@ -6,7 +6,18 @@
       <th>Name</th>
       <th>Start Date</th>
       <th>End Date</th>
-      <th></th>
+      <th>Offering Type</th>
+      <th>City</th>
+      <th>Location</th>
+      <th>Description</th>
+      <th>Max Enrollment</th>
+      <th>Created At</th>
+      <th>Updated At</th>
+      <th>Deadline At</th>
+      <th>Tuition Cost</th>
+      <th>Deposit Cost</th>
+      <th>Code</th>
+      <th>User Enrollment ID</th>
     </tr>
   </thead>
 
@@ -16,6 +27,18 @@
         <td><%= offering.name %></td>
         <td><%= offering.starts_at %></td>
         <td><%= offering.ends_at %></td>
+        <td><%= offering.offering_type_id %></td>
+        <td><%= offering.city_id %></td>
+        <td><%= offering.location_id %></td>
+        <td><%= offering.description %></td>
+        <td><%= offering.max_enrollment %></td>
+        <td><%= offering.created_at %></td>
+        <td><%= offering.updated_at %></td>
+        <td><%= offering.deadline_at %></td>
+        <td><%= offering.tuition_cost %></td>
+        <td><%= offering.deposit_cost %></td>
+        <td><%= offering.code %></td>
+        <td><%= offering.user_enrollment_id %></td>
         <td><%= link_to 'Show', offering %></td>
         <td><%= link_to 'Edit', edit_offering_path(offering) %></td>
         <td><%= link_to 'Destroy', offering, method: :delete, data: { confirm: 'Are you sure?' } %></td>

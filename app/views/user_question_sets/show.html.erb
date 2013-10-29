@@ -20,5 +20,10 @@
   <%= @user_question_set.updated_at %>
 </p>
 
+<p>
+  <strong>User Enrollment ID:</strong>
+  <%= @user_question_set.user_enrollment_id %>
+</p>
+
 <%= link_to 'Edit', edit_user_question_set_path(@user_question_set) %> |
 <%= link_to 'Back', user_question_sets_path %>

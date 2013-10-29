@@ -6,7 +6,22 @@
 </p>
 
 <p>
-  <strong>Detail:</strong>
+  <strong>Offering Type:</strong>
+  <%= @offering.offering_type_id %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @offering.city_id %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @offering.location_id %>
+</p>
+
+<p>
+  <strong>Description:</strong>
   <%= @offering.description %>
 </p>
 
@@ -19,6 +34,46 @@
 <p>
   <strong>End Date:</strong>
   <%= @offering.ends_at %>
+</p>
+
+<p>
+  <strong>Max Enrollment:</strong>
+  <%= @offering.max_enrollment %>
+</p>
+
+<p>
+  <strong>Created:</strong>
+  <%= @offering.created_at %>
+</p>
+
+<p>
+  <strong>Updated:</strong>
+  <%= @offering.updated_at %>
+</p>
+
+<p>
+  <strong>Deadline:</strong>
+  <%= @offering.deadline_at %>
+</p>
+
+<p>
+  <strong>Tuition Cost:</strong>
+  <%= @offering.tuition_cost %>
+</p>
+
+<p>
+  <strong>Deposit Cost:</strong>
+  <%= @offering.deposit_cost %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @offering.code %>
+</p>
+
+<p>
+  <strong>User Enrollment:</strong>
+  <%= @offering.user_enrollment_id %>
 </p>
 
 <%= link_to 'Edit', edit_offering_path(@offering) %> |
