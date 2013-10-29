@@ -1,4 +1,6 @@
 json.array!(@offerings) do |offering|
-  json.extract! offering, :name, :detail,:start_date,:end_date,:created_at
+  json.extract! offering, :name, :offering_type_id, :city_id, :description, :location_id,
+                                       :starts_at, :ends_at, :max_enrollment, :created_at, :updated_at,
+                                       :deadline_at, :tuition_cost, :deposit_cost, :code, :user_enrollment_id
   json.url offering_url(offering, format: :json)
 end

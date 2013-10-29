@@ -4,7 +4,6 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Detail</th>
       <th>Start Date</th>
       <th>End Date</th>
       <th></th>
@@ -15,9 +14,8 @@
     <% @offerings.each do |offering| %>
       <tr>
         <td><%= offering.name %></td>
-        <td><%= offering.detail %></td>
-        <td><%= offering.start_date %></td>
-        <td><%= offering.end_date %></td>
+        <td><%= offering.starts_at %></td>
+        <td><%= offering.ends_at %></td>
 
         <td><%= link_to 'Show', offering %></td>
       </tr>

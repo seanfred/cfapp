@@ -10,21 +10,34 @@ class QuestionsController < ApplicationController
   # GET /questions/1
   # GET /questions/1.json
   def show
+    @question = Question.find(params[:id])
+    @answers = @question.answers
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @question}
+    end
   end
 
   # GET /questions/new
   def new
     @question = Question.new
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @question}
+    end
   end
 
   # GET /questions/1/edit
   def edit
+    @question = Question.find(params[:id])
   end
 
   # POST /questions
   # POST /questions.json
   def create
-    @question = Question.new(question_params)
+    @question = Question.new(params[:question])
 
     respond_to do |format|
       if @question.save
@@ -70,6 +83,6 @@ class QuestionsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def question_params
       params.require(:question).permit(:name, :body, :question_type_id, :created_at, :updated_at,
-                                      :description, :user_question_set_id)
+                                      :description, :user_question_set_id, :priority_id)
     end
 end

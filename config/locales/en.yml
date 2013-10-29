@@ -22,7 +22,7 @@
 en:
   hello: "Hello world"
 
-en:
-  time:
-    formats:
-      default: '%m/%d/%Y %H:%M'
+# en:
+#   time:
+#     formats:
+#       default: '%m/%d/%Y %H:%M'

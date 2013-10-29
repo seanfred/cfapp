@@ -3,20 +3,18 @@ CodefellowsTest::Application.routes.draw do
 
   resources :user_enrollments
 
-  resources :question_sets
-
 
 
   resources :questions do
     resources :answers
   end
 
-  resources :admission_requests
+
 
   resources :offerings
 
   devise_for :users
-  get '/admission_requests' => 'admission_requests#delete_user', as: 'delete_user'
+  get '/user_enrollments' => 'user_enrollments#delete_user', as: 'delete_user'
 
   devise_scope :users do
     get '/users/sign_out' => 'devise/sessions#destroy'

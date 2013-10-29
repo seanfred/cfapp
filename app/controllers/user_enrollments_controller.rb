@@ -1,4 +1,5 @@
 class UserEnrollmentsController < ApplicationController
+  before_filter :check_logged_in_user, except: [:index, :delete_user]
   before_action :set_user_enrollment, only: [:show, :edit, :update, :destroy]
 
   # GET /user_enrollments
@@ -10,11 +11,18 @@ class UserEnrollmentsController < ApplicationController
   # GET /user_enrollments/1
   # GET /user_enrollments/1.json
   def show
+    if @user_enrollments.user_id != current_user.id
+      redirect_to root_path
+    end
   end
 
   # GET /user_enrollments/new
   def new
-    @user_enrollment = UserEnrollment.new
+    if current_user.user_enrollment
+      redirect_to root_path
+    else
+      @user_enrollment = UserEnrollment.new
+    end
   end
 
   # GET /user_enrollments/1/edit
@@ -25,7 +33,7 @@ class UserEnrollmentsController < ApplicationController
   # POST /user_enrollments.json
   def create
     @user_enrollment = UserEnrollment.new(user_enrollment_params)
-
+    @user_enrollments.user_id != current_user.id
     respond_to do |format|
       if @user_enrollment.save
         format.html { redirect_to @user_enrollment, notice: 'User enrollment was successfully created.' }
@@ -61,15 +69,33 @@ class UserEnrollmentsController < ApplicationController
     end
   end
 
-  private
+  def delete_user
+    user_id = params[:format]
+    User.find(user_id).destroy
+    redirect_to user_sessions_path
+  end
+
+    private
+
+
+    def check_logged_in_user
+      if !current_user
+        redirect_to root_path
+      end
+    end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_user_enrollment
-      @user_enrollment = UserEnrollment.find(params[:id])
+      if current_user
+        @user_enrollment = current_user.user_enrollment
+      else
+        @user_enrollment = UserEnrollment.find(params[:id])
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_enrollment_params
       params.require(:user_enrollment).permit(:user_id, :offering_id, :status, :created_at,
-                     :updated_at)
+       :updated_at)
     end
-end
+  end

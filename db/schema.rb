@@ -1,3 +1,4 @@
+
 # encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
@@ -11,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131027011902) do
+ActiveRecord::Schema.define(version: 20131028222320) do
 
   create_table "answers", force: true do |t|
     t.integer  "user_id"
@@ -73,6 +74,7 @@ ActiveRecord::Schema.define(version: 20131027011902) do
     t.datetime "updated_at"
     t.text     "description"
     t.integer  "user_question_set_id"
+    t.integer  "priority_id"
   end
 
   add_index "questions", ["question_type_id"], name: "index_questions_on_question_type_id"
