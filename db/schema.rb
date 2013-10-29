@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131029225216) do
+ActiveRecord::Schema.define(version: 20131029231154) do
 
   create_table "answers", force: true do |t|
     t.integer  "user_id"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20131029225216) do
     t.integer  "deposit_cost"
     t.string   "code"
     t.integer  "user_enrollment_id"
+    t.integer  "language_type"
   end
 
   add_index "offerings", ["city_id"], name: "index_offerings_on_city_id"
