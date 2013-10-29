@@ -29,9 +29,9 @@
 
 
 <% if current_user %>
-  <% if current_user.admission_request%>
-    <%= link_to "View application",admission_request_path(current_user.admission_request)%>
+  <% if current_user.user_enrollment%>
+    <%= link_to "View application",user_enrollment_path(current_user.user_enrollment)%>
   <%else %>
-    <%= link_to "Apply now",new_admission_request_path%>
+    <%= link_to "Apply now",new_user_enrollment_path%>
   <% end %>
 <% end %>

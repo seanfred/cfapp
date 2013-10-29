@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   has_many :answers
 
   devise :database_authenticatable, :registerable,:token_authenticatable,
-         :recoverable, :rememberable, :trackable, :validatable, :confirmable
+         :recoverable, :rememberable, :trackable, :validatable
 
 
 
