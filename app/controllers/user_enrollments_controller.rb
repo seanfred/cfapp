@@ -12,14 +12,14 @@ class UserEnrollmentsController < ApplicationController
   # GET /user_enrollments/1.json
   def show
     if @user_enrollments.user_id != current_user.id
-      redirect_to root_path
+      redirect_to edit_user_enrollment_path
     end
   end
 
   # GET /user_enrollments/new
   def new
     if current_user.user_enrollment
-      redirect_to root_path
+      redirect_to new_user_enrollment_path
     else
       @user_enrollment = UserEnrollment.new
     end
@@ -80,7 +80,7 @@ class UserEnrollmentsController < ApplicationController
 
     def check_logged_in_user
       if !current_user
-        redirect_to root_path
+        redirect_to new_user_session_path
       end
     end
 
