@@ -1,5 +1,4 @@
 class AnswersController < ApplicationController
-  before_action :set_answer, only: [:show, :edit, :update, :destroy]
 
   before_filter :find_the_question
   # GET /answers
@@ -31,7 +30,7 @@ class AnswersController < ApplicationController
 
     respond_to do |format|
       if @answer.save
-        format.html { redirect_to question_answer_path(@question), notice: 'Answer was successfully created.' }
+        format.html { redirect_to [@question, @answer], notice: 'Answer was successfully created.' }
         format.json { render action: 'show', status: :created, location: @answer }
       else
         format.html { render action: 'new' }
