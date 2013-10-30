@@ -11,9 +11,7 @@ class UserEnrollmentsController < ApplicationController
   # GET /user_enrollments/1
   # GET /user_enrollments/1.json
   def show
-    if @user_enrollment.user_id != current_user.id
-      redirect_to user_enrollments_path
-    end
+   @user_enrollment.user_id != current_user.id
   end
 
   # GET /user_enrollments/new
