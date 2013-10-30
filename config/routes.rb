@@ -16,7 +16,9 @@ CodefellowsTest::Application.routes.draw do
   devise_for :users
   get '/user_enrollments' => 'user_enrollments#delete_user', as: 'delete_user'
 
-
+  devise_scope :users do
+    delete '/users/sign_out' => 'devise/sessions#destroy'
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
