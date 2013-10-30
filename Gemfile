@@ -19,6 +19,7 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'sqlite3'
   gem 'railroady'
+  gem 'rspec-rails', '~> 2.0'
 end
 
 # Use Uglifier as compressor for JavaScript assets
