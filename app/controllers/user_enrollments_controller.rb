@@ -11,8 +11,8 @@ class UserEnrollmentsController < ApplicationController
   # GET /user_enrollments/1
   # GET /user_enrollments/1.json
   def show
-    if @user_enrollments.user_id != current_user.id
-      redirect_to edit_user_enrollment_path
+    if @user_enrollment.user_id != current_user.id
+      redirect_to user_enrollments_path
     end
   end
 
@@ -33,7 +33,7 @@ class UserEnrollmentsController < ApplicationController
   # POST /user_enrollments.json
   def create
     @user_enrollment = UserEnrollment.new(user_enrollment_params)
-    @user_enrollments.user_id != current_user.id
+    @user_enrollment.user_id != current_user.id
     respond_to do |format|
       if @user_enrollment.save
         format.html { redirect_to @user_enrollment, notice: 'User enrollment was successfully created.' }
@@ -50,7 +50,7 @@ class UserEnrollmentsController < ApplicationController
   def update
     respond_to do |format|
       if @user_enrollment.update(user_enrollment_params)
-        format.html { redirect_to @user_enrollment, notice: 'User enrollment was successfully updated.' }
+        format.html { redirect_to user_enrollment_path, notice: 'User enrollment was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -86,11 +86,7 @@ class UserEnrollmentsController < ApplicationController
 
     # Use callbacks to share common setup or constraints between actions.
     def set_user_enrollment
-      if current_user
-        @user_enrollment = current_user.user_enrollment
-      else
         @user_enrollment = UserEnrollment.find(params[:id])
-      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
