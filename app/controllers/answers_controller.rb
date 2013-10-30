@@ -1,5 +1,4 @@
 class AnswersController < ApplicationController
-  before_action :set_answer, only: [:show, :edit, :update, :destroy]
 
   before_filter :find_the_question
   # GET /answers
