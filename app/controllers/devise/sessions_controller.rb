@@ -12,27 +12,10 @@ class Devise::SessionsController < DeviseController
 
   # POST /resource/sign_in
   def create
-    respond_to do |format|
-        format.html {
-          self.resource = warden.authenticate!(auth_options)
-          set_flash_message(:notice, :signed_in) if is_navigational_format?
-          sign_in(resource_name, resource)
-          respond_with resource, :location => after_sign_in_path_for(resource)
-        }
-        format.json {
-          resource = User.find_for_database_authentication(:email=>params[:user][:email])
-          return invalid_login_attempt unless resource
-
-          if resource.valid_password?(params[:user][:password])
-            sign_in("user", resource)
-            resource.ensure_authentication_token!  #make sure the user has a token generated
-            render :json=>{ token: resource.authentication_token, status: :created, user_id: resource.id }
-            return
-          end
-          invalid_login_attempt
-        }
-    end
-
+  self.resource = warden.authenticate(auth_options)
+  set_flash_message(:notice, :signed_in) if is_navigational_format?
+  sign_in(resource_name, resource)
+  respond_with resource, :location => after_sign_in_path_for(resource)
   end
 
   # DELETE /resource/sign_out
