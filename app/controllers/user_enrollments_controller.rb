@@ -21,9 +21,9 @@ class UserEnrollmentsController < ApplicationController
     if current_user.user_enrollment
       redirect_to root_path
     else
-      @user_enrollment = UserEnrollment.new
-    end
-  end
+     @user_enrollment = UserEnrollment.new
+   end
+ end
 
   # GET /user_enrollments/1/edit
   def edit
