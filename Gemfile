@@ -5,7 +5,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 group :production do
-gem 'pg'
+  gem 'pg'
+  gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
+  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
 end
 
 # Use SCSS for stylesheets
@@ -26,6 +28,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'devise'
 gem 'figaro'
+gem 'rspec'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -57,3 +60,5 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'figaro'
+
+
