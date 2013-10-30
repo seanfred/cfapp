@@ -67,7 +67,7 @@ CodefellowsTest::Application.configure do
   # Mailer configuration.
   config.action_mailer.perform_deliveries = true
   config.action_mailer.default charset: "utf-8"
-  config.action_mailer.default_url_options = { :host => 'codefellows-test.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'code-fellows-app.herokuapp.com' }
     ActionMailer::Base.smtp_settings = {
       :address        => "smtp.sendgrid.net",
       :port           => "25",

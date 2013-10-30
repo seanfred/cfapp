@@ -5,10 +5,6 @@ class User < ActiveRecord::Base
   has_one :user_question_set
   has_many :answers
 
-  devise :database_authenticatable, :registerable,:token_authenticatable,
+  devise :database_authenticatable, :registerable, :token_authenticatable,
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
-
-
-
-
 end
