@@ -27,11 +27,11 @@ class AnswersController < ApplicationController
   # POST /answers
   # POST /answers.json
   def create
-    @answer = @question.answers.new(params[:answers])
+    @answer = @question.answers.new(answers_params)
 
     respond_to do |format|
       if @answer.save
-        format.html { redirect_to [@answer, @question], notice: 'Answer was successfully created.' }
+        format.html { redirect_to question_answer_path(@question), notice: 'Answer was successfully created.' }
         format.json { render action: 'show', status: :created, location: @answer }
       else
         format.html { render action: 'new' }
@@ -45,8 +45,8 @@ class AnswersController < ApplicationController
   def update
     @answer = @question.answers.find(params[:id])
     respond_to do |format|
-      if @answer.update_attributes(params[:answer])
-        format.html { redirect_to [@answer, @question], notice: 'Answer was successfully updated.' }
+      if @answer.update_attributes(answer_params)
+        format.html { redirect_to question_answer_path(@question), notice: 'Answer was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -73,9 +73,9 @@ class AnswersController < ApplicationController
     end
 
     # Use callbacks to share common setup or constraints between actions.
-    def set_answer
-      @answer = Answer.find(params[:id])
-    end
+    # def set_answer
+    #   @answer = Answer.find(params[:id])
+    # end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def answer_params
