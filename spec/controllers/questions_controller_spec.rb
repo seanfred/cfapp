@@ -40,8 +40,8 @@ describe QuestionsController do
     it "responds successfully with an HTTP 200 status code" do
       question = FactoryGirl.create(:question)
       get :destroy, id: question
-      expect(response).to be_success
-      expect(response.status).to eq(200)
+      expect(response).should be_redirect
+      expect(response.status).to eq(302)
     end
   end
 

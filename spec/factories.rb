@@ -14,7 +14,6 @@ FactoryGirl.define do
     f.id "1"
   end
   factory :user_question_set do |f|
-    f.name "tom"
     f.id "1"
   end
 end
