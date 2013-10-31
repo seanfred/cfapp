@@ -1,5 +1,5 @@
 class ActiveSupport::TimeWithZone
     def as_json(options = {})
-      strftime('%b %e, %Y %l:%m%p')
+        strftime('%a %b %d %X %0Z %G')
     end
 end
