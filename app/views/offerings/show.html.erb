@@ -27,13 +27,13 @@
 
 <p>
   <strong>Start Date:</strong>
-  <%= @offering.starts_at %>
+  <%= @offering.starts_at.strftime("%b %e, %Y %l:%m%p") %>
 </p>
 
 
 <p>
   <strong>End Date:</strong>
-  <%= @offering.ends_at %>
+  <%= @offering.ends_at.strftime("%b %e, %Y %l:%m%p") %>
 </p>
 
 <p>
@@ -41,19 +41,22 @@
   <%= @offering.max_enrollment %>
 </p>
 
+
+<!-- #.strftime("%b %e, %Y %l:%m%p") this is how you display time differently look at http://apidock.com/ruby/DateTime/strftime-->
+
 <p>
   <strong>Created:</strong>
-  <%= @offering.created_at %>
+  <%= @offering.created_at.strftime("%b %e, %Y %l:%m%p") %>
 </p>
 
 <p>
   <strong>Updated:</strong>
-  <%= @offering.updated_at %>
+  <%= @offering.updated_at.strftime("%b %e, %Y %l:%m%p") %>
 </p>
 
 <p>
   <strong>Deadline:</strong>
-  <%= @offering.deadline_at %>
+  <%= @offering.deadline_at.strftime("%b %e, %Y %l:%m%p") %>
 </p>
 
 <p>
