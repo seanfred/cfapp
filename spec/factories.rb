@@ -1,3 +1,23 @@
+
+
+
+# FactoryGirl.define do
+#   factory :message do
+#     id "1"
+#     user_id "5"
+#     offering_id "4"
+#     status "active"
+#   end
+
+#   factory class: Message do
+#     id "1"
+#     user_id "5"
+#     offering_id "4"
+#     status "active"
+#   end
+
+# end
+
 require 'factory_girl'
 
 FactoryGirl.define do
@@ -10,7 +30,7 @@ FactoryGirl.define do
     f.id "1"
   end
   factory :user_enrollment do |f|
-    f.name "tom"
+    f.offering_id "tom"
     f.id "1"
   end
   factory :user_question_set do |f|
@@ -21,4 +41,5 @@ FactoryGirl.define do
     f.body "whatever"
   end
 end
+
 

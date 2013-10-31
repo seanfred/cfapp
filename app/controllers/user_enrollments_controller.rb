@@ -12,6 +12,8 @@ class UserEnrollmentsController < ApplicationController
   # GET /user_enrollments/1.json
   def show
    @user_enrollment.user_id != current_user.id
+   @offerings = @user_enrollment.offerings
+   @user_question_sets = @user_enrollment.user_question_sets
   end
 
   # GET /user_enrollments/new
