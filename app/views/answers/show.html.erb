@@ -17,12 +17,12 @@
 
 <p>
   <strong>Created At:</strong>
-  <%= @answer.created_at %>
+  <%= @answer.created_at.strftime("%b %e, %Y %l:%m%p") %>
 </p>
 
 <p>
   <strong>Updated At:</strong>
-  <%= @answer.updated_at %>
+  <%= @answer.updated_at.strftime("%b %e, %Y %l:%m%p") %>
 </p>
 
 <%= link_to 'Edit', edit_question_answer_path(@question, @answer) %> |
