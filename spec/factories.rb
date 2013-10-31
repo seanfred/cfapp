@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 
 # FactoryGirl.define do
@@ -17,7 +17,7 @@
 #   end
 
 # end
-=======
+
 require 'factory_girl'
 
 FactoryGirl.define do
@@ -30,7 +30,7 @@ FactoryGirl.define do
     f.id "1"
   end
   factory :user_enrollment do |f|
-    f.name "tom"
+    f.offering_id "tom"
     f.id "1"
   end
   factory :user_question_set do |f|
@@ -38,4 +38,4 @@ FactoryGirl.define do
   end
 end
 
->>>>>>> e87c9cb30ce19b694613285e197f314fe31c8e6b
+

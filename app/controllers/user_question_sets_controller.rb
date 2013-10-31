@@ -10,6 +10,8 @@ class UserQuestionSetsController < ApplicationController
   # GET /user_question_sets/1
   # GET /user_question_sets/1.json
   def show
+
+    @questions = @user_question_set.questions
   end
 
   # GET /user_question_sets/new

@@ -1,9 +1,7 @@
 # require 'spec_helper'
 # require 'factory_girl'
 
-<<<<<<< HEAD
 
-=======
 # describe AnswersController do
 #   describe "GET #index" do
 #     it "responds successfully with an HTTP 200 status code" do
@@ -48,4 +46,4 @@
 #   end
 
 # end
->>>>>>> e87c9cb30ce19b694613285e197f314fe31c8e6b
+
