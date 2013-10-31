@@ -1,7 +1,0 @@
-# en:
-#   date:
-#     formats:
-#       default: "%d.%m.%Y"
-#       short: "%d %b"
-#       long: "%d %B %Y"
-#       date: "%a, %d %b %Y"

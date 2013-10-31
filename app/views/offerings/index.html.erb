@@ -26,17 +26,17 @@
     <% @offerings.each do |offering| %>
       <tr>
         <td><%= offering.name %></td>
-        <td><%= offering.starts_at.strftime("%b %e, %Y %l:%m%p") %></td>
-        <td><%= offering.ends_at.strftime("%b %e, %Y %l:%m%p") %></td>
+        <td><%= offering.starts_at %></td>
+        <td><%= offering.ends_at %></td>
         <td><%= offering.offering_type_id %></td>
         <td><%= offering.city_id %></td>
         <td><%= offering.location_id %></td>
         <td><%= offering.description %></td>
         <td><%= offering.max_enrollment %></td>
-        <!-- #.strftime("%b %e, %Y %l:%m%p") this is how you display time differently look at http://apidock.com/ruby/DateTime/strftime-->
-        <td><%= offering.created_at.strftime("%b %e, %Y %l:%m%p") %></td>
-        <td><%= offering.updated_at.strftime("%b %e, %Y %l:%m%p") %></td>
-        <td><%= offering.deadline_at.strftime("%b %e, %Y %l:%m%p") %></td>
+
+        <td><%= offering.created_at %></td>
+        <td><%= offering.updated_at %></td>
+        <td><%= offering.deadline_at %></td>
         <td><%= offering.tuition_cost %></td>
         <td><%= offering.deposit_cost %></td>
         <td><%= offering.code %></td>
