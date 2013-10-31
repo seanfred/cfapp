@@ -33,4 +33,7 @@ CodefellowsTest::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+  config.gem "factory_girl_rails", :lib => "factory_girl", :source => "http://gems.github.com"
+
 end
