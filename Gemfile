@@ -9,6 +9,7 @@ group :production do
   gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
   gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
 end
+gem 'simplecov', :require => false, :group => :test
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
