@@ -39,7 +39,7 @@ describe OfferingsController do
     it "responds successfully with an HTTP 302 status code" do
       offering = FactoryGirl.create(:offering)
       delete :destroy, id: offering
-      expect(response).should be_redirect
+      response.should be_redirect
       expect(response.status).to eq(302)
     end
   end

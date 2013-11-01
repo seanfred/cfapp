@@ -40,7 +40,7 @@ require 'factory_girl'
       it "responds successfully with an HTTP 302 status code" do
         user_enrollment = FactoryGirl.create(:user_enrollment)
         delete :destroy, id: user_enrollment
-        expect(response).should be_redirect
+        response.should be_redirect
         expect(response.status).to eq(302)
       end
     end
