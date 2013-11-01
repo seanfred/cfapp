@@ -36,7 +36,7 @@ describe "GET #index" do
     end
   end
   describe "GET #destroy" do
-    it "responds successfully with an HTTP 200 status code" do
+    it "responds successfully with an HTTP 302 status code" do
       user_question_set = FactoryGirl.create(:user_question_set)
       delete :destroy, id: user_question_set
       expect(response).should be_redirect

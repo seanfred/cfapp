@@ -37,7 +37,7 @@ describe QuestionsController do
     end
   end
   describe "GET #destroy" do
-    it "responds successfully with an HTTP 200 status code" do
+    it "responds successfully with an HTTP 302 status code" do
       question = FactoryGirl.create(:question)
       get :destroy, id: question
       expect(response).should be_redirect

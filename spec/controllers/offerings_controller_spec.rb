@@ -36,9 +36,9 @@ describe OfferingsController do
     end
   end
   describe "GET #destroy" do
-    it "responds successfully with an HTTP 200 status code" do
+    it "responds successfully with an HTTP 302 status code" do
       offering = FactoryGirl.create(:offering)
-      get :destroy, id: offering
+      delete :destroy, id: offering
       expect(response).should be_redirect
       expect(response.status).to eq(302)
     end

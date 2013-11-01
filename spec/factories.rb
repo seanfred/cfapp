@@ -37,7 +37,8 @@ FactoryGirl.define do
     f.id "1"
   end
   factory :answer do |f|
-    f.id "1"
+    f.association :question
+    f.id "2"
     f.body "whatever"
   end
 end
