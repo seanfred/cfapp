@@ -36,6 +36,10 @@ FactoryGirl.define do
   factory :user_question_set do |f|
     f.id "1"
   end
+  factory :answer do |f|
+    f.id "1"
+    f.body "whatever"
+  end
 end
 
 
